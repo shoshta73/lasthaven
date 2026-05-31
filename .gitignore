@@ -1,0 +1,7 @@
+# We are ignoring all dotfiles by default, if you need dotfiles you must
+# opt in eplicitly
+**/.*
+!.editorconfig
+!.gitignore
+
+build
