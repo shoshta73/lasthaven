@@ -1,6 +1,9 @@
 # We are ignoring all dotfiles by default, if you need dotfiles you must
 # opt in eplicitly
 **/.*
+!.clangd
+!.clang-format
+!.clang-tidy
 !.editorconfig
 !.gitignore
 

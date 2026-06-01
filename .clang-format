@@ -1,0 +1,29 @@
+BasedOnStyle: Google
+ColumnLimit: 0
+
+IncludeBlocks: Regroup
+IncludeCategories:
+  # Std headers
+  - Regex: "<[[:alnum:]_.]+>"
+    Priority: 2
+
+  # Other headers
+  - Regex: ".*"
+    Priority: 1
+
+---
+Language: C
+
+UseTab: Never
+DerivePointerAlignment: false
+PointerAlignment: Right
+ReferenceAlignment: Right
+---
+Language: Cpp
+
+UseTab: Never
+DerivePointerAlignment: false
+PointerAlignment: Right
+ReferenceAlignment: Right
+
+WrapNamespaceBodyWithEmptyLines: Always

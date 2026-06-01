@@ -1,0 +1,24 @@
+HeaderFileExtensions: ["", "h", "hh", "hpp", "hxx"]
+ImplementationFileExtensions: ["c", "cc", "cpp", "cxx"]
+
+Checks: >
+  -*,
+  bugprone-*,
+  cert-*,
+  clang-analyzer-*,
+  clang-diagnostic-*,
+  cppcoreguidelines-*,
+  google-build-explicit-make-pair,
+  google-default-arguments,
+  google-explicit-constructor,
+  google-readability-todo,
+  google-runtime-float,
+  google-runtime-int,
+  google-runtime-operator,
+  google-upgrade-googletest-case,
+  llvm-namespace-comment,
+  misc-*,
+  modernize-*,
+  performance-*,
+  portability-*,
+  readability-*
