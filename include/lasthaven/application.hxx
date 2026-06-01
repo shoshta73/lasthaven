@@ -6,6 +6,8 @@
 
 namespace lasthaven {
 
+class WindowSystem;
+
 class Application {
  public:
   struct CreateInfo {
@@ -19,10 +21,11 @@ class Application {
   Application(Application &&) noexcept = delete;
   auto operator=(Application &&) noexcept = delete;
 
-  ~Application() = default;
+  ~Application();
 
  private:
   std::string name_;
+  WindowSystem *window_system_{};
 };
 
 }  // namespace lasthaven

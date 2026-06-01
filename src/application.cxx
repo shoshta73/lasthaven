@@ -1,5 +1,7 @@
 #include "lasthaven/application.hxx"
 
+#include "lasthaven/window_system.hxx"
+
 #include <stdexcept>
 
 namespace lasthaven {
@@ -10,6 +12,9 @@ Application::Application(const CreateInfo &create_info) {
   }
 
   name_ = create_info.name;
+  window_system_ = new WindowSystem();  // NOLINT(cppcoreguidelines-owning-memory): Application owns the window system
 }
+
+Application::~Application() { delete window_system_; }
 
 }  // namespace lasthaven
