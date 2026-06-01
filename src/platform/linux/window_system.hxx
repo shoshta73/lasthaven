@@ -13,6 +13,8 @@ class LinuxWindowSystem : public WindowSystem {
   LinuxWindowSystem(LinuxWindowSystem &&) noexcept = delete;
   auto operator=(LinuxWindowSystem &&) noexcept -> LinuxWindowSystem &;
   ~LinuxWindowSystem() override = default;
+
+  static auto create() -> LinuxWindowSystem *;
 };
 
 }  // namespace lasthaven

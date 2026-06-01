@@ -6,8 +6,8 @@ namespace lasthaven {
 
 auto WindowSystem::create() -> WindowSystem * {
 #ifdef __linux__
-  return new LinuxWindowSystem();  // NOLINT(cppcoreguidelines-owning-memory): Application owns the window system
-#else                              // ^^^ ___linux___ ^^^ || vvv !__linux__
+  return LinuxWindowSystem::create();
+#else  // ^^^ ___linux___ ^^^ || vvv !__linux__
 #error "Unsuported Platform"
 #endif
 }

@@ -9,6 +9,7 @@ if(LINUX)
         target_sources(
                 liblasthaven
                 PRIVATE
+                platform/linux/xcb/window_system.cxx
                 platform/linux/window_system.cxx
         )
 endif()
