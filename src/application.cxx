@@ -12,7 +12,7 @@ Application::Application(const CreateInfo &create_info) {
   }
 
   name_ = create_info.name;
-  window_system_ = new WindowSystem();  // NOLINT(cppcoreguidelines-owning-memory): Application owns the window system
+  window_system_ = WindowSystem::create();
 }
 
 Application::~Application() { delete window_system_; }

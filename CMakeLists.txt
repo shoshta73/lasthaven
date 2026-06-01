@@ -55,6 +55,12 @@ target_include_directories(
         $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
 )
 
+target_include_directories(
+        liblasthaven
+        PRIVATE
+        ${CMAKE_CURRENT_SOURCE_DIR}/src
+)
+
 add_executable(lasthaven)
 
 set_target_properties(

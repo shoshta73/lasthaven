@@ -1,0 +1,15 @@
+#include "lasthaven/window_system.hxx"
+
+#include "platform/linux/window_system.hxx"
+
+namespace lasthaven {
+
+auto WindowSystem::create() -> WindowSystem * {
+#ifdef __linux__
+  return new LinuxWindowSystem();  // NOLINT(cppcoreguidelines-owning-memory): Application owns the window system
+#else                              // ^^^ ___linux___ ^^^ || vvv !__linux__
+#error "Unsuported Platform"
+#endif
+}
+
+}  // namespace lasthaven

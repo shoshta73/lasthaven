@@ -3,6 +3,10 @@ ColumnLimit: 0
 
 IncludeBlocks: Regroup
 IncludeCategories:
+  # Project platform headers
+  - Regex: '^"platform/linux/'
+    Priority: 4
+
   # Project
   - Regex: '^((<|")(lasthaven/))'
     Priority: 3

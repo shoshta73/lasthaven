@@ -10,7 +10,9 @@ class WindowSystem {
   auto operator=(const WindowSystem &) -> WindowSystem &;
   WindowSystem(WindowSystem &&) noexcept = delete;
   auto operator=(WindowSystem &&) noexcept -> WindowSystem &;
-  ~WindowSystem() = default;
+  virtual ~WindowSystem() = default;
+
+  static auto create() -> WindowSystem *;
 };
 
 };  // namespace lasthaven
