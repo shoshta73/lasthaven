@@ -15,8 +15,8 @@
 > [^1]: Last time this information was reviewed is 2026-05-31
 
 - C++23 compiler
-  - Clang 13 or newer
-  - GCC 11 or newer
+  - Clang 18 or newer
+  - GCC 13 or newer
 
 ### Configuration
 

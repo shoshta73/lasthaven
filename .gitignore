@@ -5,6 +5,7 @@
 !.clang-format
 !.clang-tidy
 !.editorconfig
+!.github
 !.gitignore
 
 build
