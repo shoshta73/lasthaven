@@ -3,6 +3,10 @@ ColumnLimit: 0
 
 IncludeBlocks: Regroup
 IncludeCategories:
+  # Project
+  - Regex: '^((<|")(lasthaven/))'
+    Priority: 3
+
   # Std headers
   - Regex: "<[[:alnum:]_.]+>"
     Priority: 2

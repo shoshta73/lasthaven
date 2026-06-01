@@ -1,7 +1,7 @@
-#include "lasthaven/application.hxx"
-
 #include <exception>
 #include <iostream>
+
+#include "lasthaven/application.hxx"
 
 auto main() -> int {
   using namespace lasthaven;

@@ -1,8 +1,8 @@
 #include "lasthaven/application.hxx"
 
-#include "lasthaven/window_system.hxx"
-
 #include <stdexcept>
+
+#include "lasthaven/window_system.hxx"
 
 namespace lasthaven {
 

@@ -6,5 +6,5 @@ Diagnostics:
   MissingIncludes: Strict
 
 Style:
-  QuotedHeaders: []
+  QuotedHeaders: ["lasthaven/*"]
   AngledHeaders: []
